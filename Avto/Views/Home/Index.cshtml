@@ -1,0 +1,135 @@
+﻿@{
+	ViewData["Title"] = "Home Page";
+}
+
+@section Styles {
+	<environment include="Development">
+		<link rel="stylesheet" href="~/css/home.css" asp-append-version="true">
+	</environment>
+	<environment exclude="Development">
+		<link rel="stylesheet" href="~/css/home-bundle.css" asp-append-version="true">
+	</environment>
+}
+
+@section Scripts {
+	<environment include="Development">
+    	<script src="~/js/home.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+    	<script src="~/js/home-bundle.js" asp-append-version="true"></script>
+    </environment>
+}
+
+
+<section class="main">
+	<div class="main-wrapper">
+		<div class="header-button">
+			<h1>ремонт автомобилей <br> продажа запчастей</h1>
+			<button class="m-trigger" data-modal-id="application">
+				Оставить заявку
+			</button>
+		</div>
+	</div>
+</section>
+<section class="categories">
+	<div class="wrapper">
+		<div class="header-different">
+			<h2 class="header">Категории</h2>
+		</div>
+		<a href="" class="item">
+			Штатные Переходные рамки для магнитол
+		</a>
+		<a href="" class="item">
+			Шумоизоляция
+		</a>
+		<a href="" class="item">
+			Автосигнализации и доп. Оборудование Starline
+		</a>
+		<a href="" class="item">
+			Камеры заднего вида
+		</a>
+		<a href="" class="item">
+			Автозвук/акустика
+		</a>
+		<a href="" class="item">
+			Головные устройства Teyes
+		</a>
+		<a href="" class="item">
+			Переходные ISO разьемы для штатного подключения
+		</a>
+		<a href="" class="item">
+			Штатные Антенные переходники
+		</a>
+		<a href="" class="item">
+			Видеорегстираторы
+		</a>
+		<a href="" class="item">
+			Парктроник
+		</a>
+	</div>
+</section>
+<section class="services">
+	<h2 class="header">Услуги</h2>
+	<div class="wrapper">
+		<div class="item">
+			<img src="/images/img/services1.png" alt="" title="">
+			<p>Шумоизоляция</p>
+		</div>
+		<div class="item">
+			<img src="/images/img/services2.png" alt="" title="">
+			<p>Парктроник</p>
+		</div>
+		<div class="item">
+			<img src="/images/img/services3.png" alt="" title="">
+			<p>Камера заднего вида</p>
+		</div>
+		<div class="item">
+			<img src="/images/img/services4.png" alt="" title="">
+			<p>Автосигнализации и доп.</p>
+		</div>
+		<div class="item">
+			<img src="/images/img/services5.png" alt="" title="">
+			<p>Автозвук</p>
+		</div>
+		<div class="item">
+			<img src="/images/img/services6.png" alt="" title="">
+			<p>Видеорегстираторов</p>
+		</div>
+	</div>
+</section>
+
+
+
+@* <button class="m-trigger" data-modal-id="application"> *@
+@* 	Оставить заявку *@
+@* </button> *@
+
+@* <form class="review-form" novalidate> *@
+@* 	<h2>Оставьте отзыв</h2> *@
+@* 	<div> *@
+@* 		<input placeholder="Введите имя" type="text" name="name"> *@
+@* 	</div> *@
+@* 	<div> *@
+@* 		<input placeholder="Введите номер" type="tel" name="phone"> *@
+@* 	</div> *@
+@* 	<div> *@
+@* 		<input placeholder="Введите email" type="email" name="email"> *@
+@* 	</div> *@
+@* 	<div> *@
+@* 		<input placeholder="Введите текст отзыва" type="text" name="text"> *@
+@* 	</div> *@
+@* 	<div> *@
+@* 		<input placeholder="Введите оценку от 0 до 9" type="number" name="rate" value="0"> *@
+@* 	</div> *@
+@* 	<p>*Оставляя отзыв, Вы потверждаете согласие согласие на обработку введенных персональных данных</p> *@
+@* 	<div class="validation"></div> *@
+@* 	<button type="submit">Оставить отзыв</button> *@
+@* </form> *@
+@* *@
+@* <br> *@
+@* *@
+@* <p>Отзывы</p> *@
+@* <div class="reviews-content"> *@
+@* </div> *@
+@* *@
+@* <br> *@

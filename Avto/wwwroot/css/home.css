@@ -1,0 +1,143 @@
+.main {
+  padding: 95px 0 0 0;
+}
+.main .main-wrapper {
+  background: url("/images/img/main.jpg") center center/cover no-repeat;
+  padding: 82px 0 57px 0;
+}
+.main .main-wrapper .header-button h1 {
+  max-width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  color: #345C74;
+  text-transform: capitalize;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 30px;
+}
+.main .main-wrapper .header-button button {
+  width: 166px;
+  color: #FFFFFF;
+  font-size: 16px;
+  background: #006B94;
+  padding: 12px 0;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  margin: 25px auto 0 auto;
+}
+
+.categories .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.categories .wrapper .item {
+  max-width: 408px;
+  width: 100%;
+  height: 57px;
+  background: #006B94;
+  box-shadow: 0 4px 14px rgba(130, 118, 255, 0.25);
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 18px;
+  color: #FFFFFF;
+  line-height: 19px;
+}
+
+.services .wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.services .wrapper .item {
+  position: relative;
+  margin-top: 11px;
+}
+.services .wrapper .item img {
+  width: 100%;
+}
+.services .wrapper .item p {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #FFFFFF;
+  top: 60px;
+  text-align: center;
+}
+
+@media screen and (min-width: 766px) {
+  .main {
+    padding: 0;
+  }
+  .main .main-wrapper {
+    padding: 100px 0 107px 40px;
+  }
+  .main .main-wrapper .header-button h1 {
+    max-width: 100%;
+    font-size: 54px;
+    line-height: 65px;
+    text-align: left;
+  }
+  .main .main-wrapper .header-button button {
+    width: 304px;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 44px 0 0 0;
+  }
+  .services .wrapper .item {
+    margin: 10px 6px 0 6px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .categories .wrapper .item {
+    height: 104px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .main {
+    display: flex;
+    justify-content: center;
+    min-height: 30%;
+  }
+  .main .main-wrapper {
+    height: 487px;
+    width: 60%;
+  }
+  .main:after {
+    content: "";
+    background: url(/images/img/main-avto.png) center center/cover no-repeat;
+    margin-left: -100px;
+    margin-top: -95px;
+    width: 573px;
+    height: 654px;
+  }
+  .categories .wrapper .header-different {
+    min-width: 100%;
+    text-align: left;
+    margin-bottom: 80px;
+    display: flex;
+  }
+  .categories .wrapper .header-different:after {
+    content: "";
+    background: url(/images/img/Road.svg);
+    display: block;
+    width: 1094px;
+    height: 52px;
+    margin-left: 25px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .main .main-wrapper {
+    padding: 100px 0 107px 60px;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */
