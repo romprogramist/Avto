@@ -17,5 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // code here
     
-    
+    const btnOpenMap = document.querySelector('.open-map');
+    btnOpenMap.addEventListener('click', () => {
+        document.querySelector('iframe').classList.remove('d-none');
+    })
 });

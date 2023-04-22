@@ -29,6 +29,9 @@
     flex-wrap: wrap
     justify-content: space-around
     align-items: center
+    .header-different
+      min-width: 100%
+      margin-bottom: 20px
     .item
       max-width: 408px
       width: 100%
@@ -61,6 +64,130 @@
         color: #FFFFFF
         top: 60px
         text-align: center
+.our-workers
+  .wrapper
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    .item
+      max-width: 620px
+      width: 100%
+      height: 399px
+      margin: 11px auto 0 auto
+      position: relative
+      display: flex
+      justify-content: center
+      &:before
+        position: absolute
+        padding: 5px 30px
+        top: 10px
+        left: 10px
+        border-radius: 10px
+        color: #FFFFFF
+      img
+        width: 100%
+        object-fit: cover
+    .item-1
+      &:before
+        content: 'ДО'
+        background: #006B94
+    .item-2
+      &:before
+        content: 'ПОСЛЕ'
+        background: #00ADEF
+        
+.about-us
+  .wrapper
+    .item
+      position: relative
+      background: url(/images/img/about-us-bg.jpg) center center/ cover no-repeat
+      aspect-ratio: 16/9
+      margin: 0 auto
+      padding: 50px 50px
+      display: flex
+      align-items: center
+      img        
+        max-width: 313px 
+        width: 100%
+        aspect-ratio: 16/9
+        display: flex
+        align-items: center
+        margin: 0 auto
+    & > p
+      font-weight: 600
+      font-size: 13px
+      line-height: 16px
+      color: #686868
+      margin-top: 20px
+.application
+  .wrapper
+    .items
+      display: flex
+      align-items: center
+      .item-2
+        display: none
+      .item-1
+        display: block
+        max-width: 593px
+        margin: 0 auto
+        form
+          label
+            width: 100%
+            input
+              width: 100%
+              border: 3px solid #0F2A4A
+              border-radius: 8px
+              padding: 18px 0 18px 20px
+              margin: 10px 0 5px
+          button
+            background: #006B94
+            border-radius: 7px
+            color: #FFF
+            padding: 20px 50px
+            display: flex
+            margin: 0 auto
+          & > p
+            color: #9E9E9E
+            font-weight: 400
+            font-size: 15px
+            line-height: 16px
+            width: 250px
+            margin: 5px auto 0 auto
+            text-align: center
+.map
+  background: url(/images/img/background-map.jpg) center center/cover no-repeat
+  padding: 0
+  position: relative
+  aspect-ratio: 16/9
+  max-height: 500px
+  width: 100%
+  display: flex
+  align-items: center
+  .wrapper
+    .items
+      .item-1
+        img
+          width: 71px
+          height: 71px
+          display: block
+          margin: 0 auto
+        & > div
+          margin-top: 9px
+          text-align: center
+          .open-map
+            margin-top: 5px
+            color: #00ADEF
+            cursor: pointer
+      .item-2
+        display: none
+  iframe
+    position: absolute
+    height: 100%
+    top: 0
+  .d-none
+    display: none
+    
+
 @media screen and ( min-width: 766px )
   .main
     padding: 0
@@ -81,13 +208,52 @@
     .wrapper
       .item
         margin: 10px 6px 0 6px
+  .about-us
+    .wrapper
+      position: relative
+      .item
+        align-items: flex-start
+        max-height: 544px
+        width: 100%
+        padding-top: 20px
+      & > p
+        position: absolute
+        text-align: center
+        color: #fff
+        padding: 0 3%
+        font-size: 17px
+        line-height: 19px
+        top: 42%
+  .map
+    padding: 0 20px
+    .wrapper
+      width: 100%
+      .items
+        display: flex
+        align-items: center
+        justify-content: space-between        
+        .item-1
+          & > div
+            p
+              font-size: 36px
+              line-height: 45px
+            & > div
+              margin-top: 11px
+              font-size: 36px
+              line-height: 45px
+        .item-2
+          display: block
+          width: 50%
+          img
+            aspect-ratio: 16/9
+            width: 100%
 @media screen and ( min-width: 900px )
   .categories
     .wrapper
       .item
         height: 104px
         font-size: 24px
-        line-height: 30px
+        line-height: 30px  
 @media screen and ( min-width: 1201px )
   .main
     display: flex
@@ -117,6 +283,48 @@
           width: 1094px
           height: 52px
           margin-left: 25px
+  .about-us
+    .wrapper
+      & > p
+        font-size: 24px
+        line-height: 30px
+ 
+  .application
+    .wrapper
+      .items
+        justify-content: space-between
+        align-items: flex-start
+        .item-1
+          margin: 0
+          form
+            label
+              font-size: 24px
+            button
+              padding: 20px 100px
+        .item-2
+          display: block
+          max-width: 459px 
+          h3
+            font-weight: 700
+            font-size: 30px
+            line-height: 38px            
+            color: #357397
+          .contacts
+            margin-top: 56px
+            div
+              display: flex
+              align-items: center
+              img
+                width: 60px
+                height: 60px
+              a
+                font-weight: 500
+                font-size: 32px
+                line-height: 40px
+                color: #525252
+            div:last-child
+              margin-top: 25px
+
         
 @media screen and ( min-width: 1300px )
   .main

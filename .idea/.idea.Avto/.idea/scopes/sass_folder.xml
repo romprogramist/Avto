@@ -1,3 +1,3 @@
 <component name="DependencyValidationManager">
-  <scope name="sass folder" pattern="file[rider.module]:RSiteTemplate/sass//*||file[rider.module]:Avto/sass//*" />
+  <scope name="sass folder" pattern="file:RSiteTemplate/sass//*||file:Avto/sass//*" />
 </component>
