@@ -82,16 +82,65 @@ footer
                 display: flex
                 align-items: center
                 & > p
-                    color: #FFFGood news, and well to other Siri phone who is this is the best go straight over to 100
+                    color: #FFF
                     font-weight: 500
                     font-size: 18px
                     line-height: 22px
+                
+.overlay
+    .modal
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        max-width: 500px
+        width: 100%
+        background: #EEEEEE
+        padding: 40px 25px
+        form
+            text-align: center
+            .close-m
+                position: absolute
+                top: 20px
+                right: 20px
+                font-size: 40px
+            h2
+                margin-top: 10px
+                font-size: 32px
+            p
+                margin-top: 15px
+                font-size: 22px
+                line-height: 28px
+            label
+                display: block
+                text-align: left
+                margin-top: 25px
+                font-size: 18px
+                input
+                    width: 100%
+                    border: none
+                    margin-top: 7px
+                    padding: 12px 0 12px 15px
+            .label-number
+                margin-top: 10px
+            button
+                background: #006B94
+                color: #fff
+                padding: 12px
+                border-radius: 7px
+            
+            
+        
 @media screen and ( min-width: 766px )
     .header
         font-size: 30px
         line-height: 32px
     .wrapper
         margin: 30px auto 0 auto
+        
+    .overlay
+        .modal
+            padding: 40px
 @media screen and ( min-width: 1100px )
     .header
         font-size: 40px
