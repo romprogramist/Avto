@@ -476,6 +476,14 @@ footer {
   background: #0F2A4A;
   padding: 16px 16px 64px;
 }
+footer .items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .items .item {
+  margin-top: 25px;
+}
 footer .items .item .header-f {
   font-weight: 800;
   font-size: 20px;
