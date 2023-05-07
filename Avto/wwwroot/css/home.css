@@ -36,7 +36,7 @@
 }
 .categories .wrapper .header-different {
   min-width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .categories .wrapper .item {
   max-width: 408px;
@@ -59,18 +59,18 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 1030px;
+  max-width: 400px;
   margin-left: auto;
   margin-right: auto;
 }
 .services .wrapper .item {
   position: relative;
   margin-top: 11px;
-  max-width: 331px;
   width: 100%;
-  height: 250px;
+  height: 299px;
 }
 .services .wrapper .item img {
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -91,7 +91,7 @@
 .our-workers .wrapper .item {
   max-width: 620px;
   width: 100%;
-  height: 399px;
+  height: 260px;
   margin: 11px auto 0 auto;
   position: relative;
   display: flex;
@@ -214,6 +214,7 @@
 .map iframe {
   position: absolute;
   height: 100%;
+  width: 100%;
   top: 0;
 }
 .map .d-none {
@@ -259,9 +260,6 @@
     font-size: 17px;
     line-height: 19px;
     top: 42%;
-  }
-  .map {
-    padding: 0 20px;
   }
   .map .wrapper {
     width: 100%;
@@ -329,10 +327,10 @@
     margin-left: 25px;
   }
   .services .wrapper {
-    max-width: 1253px;
+    max-width: 1236px;
   }
   .services .wrapper .item {
-    margin: 10px 6px 0 6px;
+    margin: 12px 6px 0 6px;
     max-width: 400px;
   }
   .about-us .wrapper > p {
