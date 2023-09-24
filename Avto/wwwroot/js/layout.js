@@ -22,3 +22,37 @@
         body.classList.toggle('no-scroll');
     })
 });
+
+
+// создать объект компании с разными полями минимум 10
+//при помощи обджект кейс мне, функция должна вернуть массив строк
+
+const company = {
+    name: "ABC Corporation",
+    location: "New York",
+    foundedYear: 1990,
+    employees: 500,
+    industry: "Technology",
+    revenue: 10000000, 
+    isPublic: true,
+    departments: ["HR", "Finance", "Marketing", "Engineering"],
+    hasBranches: true
+};
+
+function returnArrStrObjKey(obj) {
+    const emptyArray = [];
+    Object.keys(obj).forEach(el => {
+        emptyArray.push(el)
+    })
+    return emptyArray;
+}
+
+function returnArrStrObjEntries(obj) {
+    const emptyArray = [];
+    Object.entries(obj).forEach(el => {
+        emptyArray.push(el[0])
+    })
+    return emptyArray;
+}
+
+
